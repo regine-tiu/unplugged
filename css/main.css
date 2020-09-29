@@ -370,6 +370,7 @@ input[type=button] {
   padding-bottom: 125%; 
   overflow: hidden;
   position: relative;
+  margin: 0;
 }
 
 .map iframe {
@@ -633,6 +634,10 @@ footer .copyright {
   width: 45%;
 }
 
+.map figure {
+  padding-bottom: 45%; 
+}
+
 .contact-section .content-wrapper h2 {
   width: 80%;
 }
@@ -669,12 +674,12 @@ footer .copyright {
   
   aside .row {
     justify-content: space-around;
-}
+  }
 
-aside .content-wrapper .form-description,
-aside .content-wrapper .form {
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
     width: 30%;
-}
+  }
 
 /* Features */
 .features h2 {
@@ -694,6 +699,10 @@ aside .content-wrapper .form {
 .mission h2,
 .contact-section .row h2 {
     width: 
+}
+
+.map figure {
+  padding-bottom: 37.5%; 
 }
 
 /* ----- FAQ ----- */
