@@ -313,6 +313,13 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+  color: #e2e3ed;
+ 
+}
+
 .features h2 {
   margin-bottom: 60px;
 }
@@ -329,13 +336,11 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.feature p {
-  margin: 0;
+.features p {
+  text-align: center;
+  margin: 0 auto;
 }
 
-.fontawesome-icon {
-
-}
 
 .feature-item-description {
 
