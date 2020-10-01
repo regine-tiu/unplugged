@@ -132,11 +132,11 @@ p {
 }
  
 img {
- 
+ width: 100%;
 }
  
 figure {
- 
+ margin: 0;
 }
  
 address {
@@ -193,7 +193,16 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%
+  width: 100%;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
 }
 
 /* Footer styles */
@@ -234,17 +243,21 @@ footer .copyright {
 
 /* ------------------  Mobile Styles - Homepage ------------------ */
 .hero {
+  background: url('../img/hero.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  min-height: 500px;
 }
 
-.hero-area h1 {
+.hero h1 {
   font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500; 
   line-height: 1.2; 
+  margin-top: -40%;
 }
 
 aside {
@@ -292,6 +305,8 @@ input[type=button] {
 
 /* Features */
 .features {
+  background: url('../img/camp_background.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -328,6 +343,7 @@ input[type=button] {
 
 /* Reviews */
 .reviews {
+  background-color:#2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -335,6 +351,7 @@ input[type=button] {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -514,7 +531,7 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
   .row {
     max-width: 640px;
-    margin: 100px 0;
+    margin: 50px 0;
   }
 
 /* Header */
@@ -528,13 +545,16 @@ header .row {
     justify-content: space-between;
 }
 
+header figure {
+  width: 30%;
+}
+
 header nav {
     width: 20%;
 }
 
 header nav ul {
   justify-content: space-between;
-
 }
 
 .header-divider {
@@ -542,6 +562,14 @@ header nav ul {
 }
 
 /* Hero Area */
+.hero {
+  min-height: 600px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  line-height: 1.1;
+}
 
 /* Aside */
 aside .row {
@@ -576,11 +604,19 @@ aside .content-wrapper .form {
   display: flex;
   justify-content: space-between;
 }
-
-.reviews article div {
-    width: 49%;        
+.reviews h2 {
+  width: 85%;
 }
 
+.reviews article figure,
+.reviews article div {
+  width: 49%;
+}
+
+.reviews h3 {
+  width: 75%;
+  margin: 0;
+}
 /* Footer */
 footer .content-wrapper {
     width: 65%;
@@ -668,8 +704,30 @@ footer .copyright {
     max-width: 960px;
   }
 
+  header {
+    padding: 15px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
+
+  /* Hero */
+
   .hero h1{
-    width: 60%
+    font-size: 3.75em;
+    width: 80%;
+    margin-top: -25%;
   }
   
   aside .row {
@@ -692,13 +750,21 @@ footer .copyright {
 
 /* Reviews */ 
 .reviews article div {
-    width: 
+  width: 42%;
+}
+
+.reviews h2 {
+  padding-bottom: 50px;
+}
+
+footer h4 {
+  font-size: 1.875em;
 }
 
 /* ----- About ----- */
 .mission h2,
 .contact-section .row h2 {
-    width: 
+  
 }
 
 .map figure {
